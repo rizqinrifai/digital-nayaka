@@ -1,0 +1,27 @@
+.project-col {
+    margin: 0 !important;
+}
+
+@media (max-width: 414px) {
+.project .container {
+        overflow: hidden;
+    }
+
+    .project .row {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+    }
+
+    .project .col {
+        scroll-snap-align: start;
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    .project .col img {
+        width: 100%;
+        height: auto;
+    }
+}

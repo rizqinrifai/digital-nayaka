@@ -1,0 +1,142 @@
+import React from "react";
+import { Container, Col, Row, Image, Carousel } from "react-bootstrap";
+import "../style/Team.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/effect-flip";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { Pagination, Autoplay, Navigation } from "swiper/modules";
+
+import danielTeam from "../assets/team/Frame 1000001464.png";
+import deniImage from "../assets/team/Deni.png";
+import adjieImage from "../assets/team/Adjie.png";
+import budiImage from "../assets/team/Budi.png";
+import cliefImage from "../assets/team/Clief.png";
+import andriImage from "../assets/team/Andri.png";
+import kimImage from "../assets/team/Kim.png";
+import rizqiImage from "../assets/team/Rizqi.png";
+import hendyImage from "../assets/team/Hendy.png";
+import raffiImage from "../assets/team/Raffi.png";
+import fahriImage from "../assets/team/Fahri.png";
+import azriImage from "../assets/team/Azri.png";
+import dwiImage from "../assets/team/Dwi.png";
+import diahImage from "../assets/team/Diah.png";
+import erlitaImage from "../assets/team/Erlita.png";
+import safiraImage from "../assets/team/Safira.png";
+import syarifImage from "../assets/team/Syarif.png";
+
+export const Team = () => {
+  return (
+    <section
+      id="team"
+      className="team"
+      style={{
+        paddingTop: "150px",
+        textAlign: "center",
+      }}
+    >
+      <Container>
+        <h1
+          style={{
+            paddingBottom: "50px",
+            color: "#005D8C",
+            fontWeight: "bold",
+          }}
+        >
+          Meet Our Team
+        </h1>
+      </Container>
+
+      <Row className="justify-content-center">
+        <Col
+          className="row-daniel"
+          md={4}
+          sm={12}
+          style={{ marginLeft: "-100px" }}
+        >
+          <Image className="img-daniel" alt="Daniel" src={danielTeam} />
+        </Col>
+
+        <Col md={4} sm={12} style={{ width: "1000px" }}>
+          <Swiper
+            pagination={{
+              clickable: true,
+            }}
+            modules={[Pagination, Autoplay, Navigation]}
+            className="mySwiper"
+            breakpoints={{
+              640: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              1024: {
+                slidesPerView: 3,
+                spaceBetween: 50,
+              },
+            }}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+          >
+            <SwiperSlide>
+              <Image alt="Deni" src={deniImage} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image alt="Adjie" src={adjieImage} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image alt="Andri" src={andriImage} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image alt="Budi" src={budiImage} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image alt="Clief" src={cliefImage} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image alt="Kim" src={kimImage} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image alt="Rizqi" src={rizqiImage} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image alt="Hendy" src={hendyImage} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image alt="Raffi" src={raffiImage} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image alt="Fahri" src={fahriImage} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image alt="Azri" src={azriImage} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image alt="Dwi" src={dwiImage} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image alt="Erlita" src={erlitaImage} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image alt="Diah" src={diahImage} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image alt="Safira" src={safiraImage} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image alt="Syarif" src={syarifImage} />
+            </SwiperSlide>
+          </Swiper>
+        </Col>
+      </Row>
+    </section>
+  );
+};

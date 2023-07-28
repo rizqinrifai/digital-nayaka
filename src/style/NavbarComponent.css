@@ -1,0 +1,132 @@
+/* NavbarComponent.css */
+.navbar {
+    transition: background-color 0.3s ease;
+}
+
+.scrolled,
+.scrolled .navbar-toggler-icon,
+.show {
+    background-color: #ffffff !important;
+}
+
+.navbar-link {
+    color: #005d8c;
+}
+
+.btn-contact {
+    background-color: #005d8c;
+    color: #ffffff;
+}
+
+/* Add any other necessary styles for the NavbarComponent */
+
+.active,
+.active-link {
+    color: #005D8C !important;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-link {
+    color: #008AD0;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-link:hover {
+    color: #005D8C;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-contact {
+    color: white;
+    background-color: #005D8C;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    width: 120px;
+    height: 45px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow:
+        2.8px 2.8px 13.8px rgba(0, 0, 0, 0.056),
+        6.7px 6.7px 33.3px rgba(0, 0, 0, 0.081),
+        12.5px 12.5px 62.6px rgba(0, 0, 0, 0.1),
+        22.3px 22.3px 111.7px rgba(0, 0, 0, 0.119),
+        41.8px 41.8px 208.9px rgba(0, 0, 0, 0.144),
+        100px 100px 500px rgba(0, 0, 0, 0.2);
+}
+
+.bgnav {
+    background-color: #005D8C;
+    /* Tambahkan gaya #005D8C lainnya sesuai kebutuhan */
+}
+
+.btn-contact:hover {
+    background-color: #008AD0;
+}
+
+@media (max-width: 414px) {
+    .navbar {
+        width: auto !important;
+        padding-right: 20px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .bgnav {
+        background-color: #ffffff;
+    }
+
+    .navbar-toggler {
+        color: #008AD0;
+    }
+
+    .navbar-nav .nav-link.active,
+    .navbar-nav .nav-link.show {
+        padding-top: 40px;
+        color: #008AD0;
+    }
+
+
+    .d-lg-none {
+        color: #008AD0;
+        font-weight: bold;
+    }
+
+}
+
+@media (max-width: 820px) {
+    .navbar {
+        width: 820;
+        padding-right: 20px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .bgnav {
+        background-color: #ffffff;
+    }
+
+    .navbar-toggler {
+        color: #008AD0;
+    }
+
+    .navbar-nav .nav-link.active,
+    .navbar-nav .nav-link.show {
+        padding-top: 40px;
+        color: #008AD0;
+    }
+
+
+    .d-lg-none {
+        color: #008AD0;
+        font-weight: bold;
+    }
+
+}

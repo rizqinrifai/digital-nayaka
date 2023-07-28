@@ -1,0 +1,30 @@
+/* .row-daniel {
+    margin-left: 400px;
+} */
+
+
+.row-teamdna {
+    width: 600px;
+}
+
+    
+
+@media (max-width: 414px) {
+.team {
+    width:330px;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.img-daniel {
+    margin-left: 65px;
+    align-items: center;
+}
+}
+
+/* @media screen and (max-width: 767px) {
+    .mySwiper {
+        width: 90%;
+    }
+
+} */

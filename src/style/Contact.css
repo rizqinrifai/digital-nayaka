@@ -1,0 +1,91 @@
+.contact {
+        background: linear-gradient(180deg, #E7F4FC00 10%, #4fb1ee44);
+            top: 0;
+            background-position: bottom center; 
+            background-repeat: repeat;
+            background-size: cover;
+}
+
+.button-send {
+    width: 257px;
+    height: 48px;
+    padding: 10px 20px;
+    background: #005D8C;
+    border-radius: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+    font-family: "Poppins";
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 0.7px;
+    word-wrap: break-word;
+}
+
+.button-send:hover {
+    background: #008AD0;
+}
+
+.button-contact {
+    width: 518px;
+    height: 40px;
+    padding: 10px 20px;
+    background: #005D8C;
+    border-radius: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+    font-family: "Poppins";
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 0.7px;
+    word-wrap: break-word;
+}
+
+.button-contact:hover {
+    background: #008AD0;
+}
+
+@media (max-width: 414px) {
+
+    /* Hide the Contact Us section when in responsive mode */
+    #contact h1,
+    #contact div[style*="width: 518px;"],
+    #contact a.button-contact,
+    #contact iframe {
+        display: none;
+    }
+
+        .row>* {
+            padding: 10px;
+        };
+}
+
+@media (max-width: 375px) {
+
+    /* Hide the Contact Us section when in responsive mode */
+    #contact h1,
+    #contact div[style*="width: 518px;"],
+    #contact a.button-contact,
+    #contact iframe {
+        display: none;
+    }
+
+    .row>* {
+        padding: 10px;
+    }
+
+    ;
+}

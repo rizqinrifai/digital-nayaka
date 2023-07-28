@@ -1,0 +1,91 @@
+
+
+.iconCard {
+    float: left;
+    margin-right: 30px;
+    margin-left: 30px;
+    /* Adjust the margin value if needed */
+}
+
+.card-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    /* Adjust the margin value if needed */
+}
+
+.arrow-icon {
+    margin-right: 30px;
+    float: right !important;
+    /* Adjust the margin value if needed */
+    font-size: 20px;
+    color: #005D8C;
+}
+
+.arrow-icon.active {
+    transform: rotate(180deg);
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.103);
+    border-radius: 30px;
+    border: none;
+}
+
+.card-career {
+    border: none;
+    transition: box-shadow 0.3s ease-in-out;
+    border-radius: 30px;
+}
+
+.card.active {
+    border-radius: 30px;
+    border: none;
+    /* Remove border radius for active card */
+}
+
+/* Apply button styles */
+.card-body a {
+    text-decoration: none;
+}
+
+.card-body a .btn {
+    background: #005D8C;
+    color: #fff;
+    border: none;
+    transition: background 0.3s ease-in-out;
+}
+
+.card-body a .btn:hover {
+    background: #004266;
+}
+
+.btn-custom {
+    border-radius: 20px;
+    width: 90px;
+    height: 45px;
+    background-color: #005D8C;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.btn-custom:hover {
+    background-color: #003955;
+}
+
+@media (max-width: 414px) {
+    .mb-4 {
+        margin-bottom: 1.5rem !important;
+        justify-content: center;
+        margin-left: -30px;
+    }
+
+    .card-career {
+        width: 350px;
+        margin-left: -35px;
+    }
+}
