@@ -7,12 +7,12 @@ export const Home = () => {
     <section
       id="home"
       className="home"
-      style={{ paddingTop: "220px", fontFamily: "Poppins" }}
+      style={{ paddingTop: "120px", fontFamily: "Poppins" }}
     >
       <Container>
         <Row className="row-home">
           <Col md={6} sm={12}>
-            <section className="home-section">
+            <section className="home-section pt-5">
               <h1>
                 <span className="home-title">WE ARE</span>{" "}
                 <span className="home-title2">DNA</span>
@@ -33,7 +33,7 @@ export const Home = () => {
               </p>
             </section>
           </Col>
-          <Col md={6} sm={12}>
+          <Col md={6} sm={12} className="pt-3">
             <section className="home-section">
               <img
                 alt=""
