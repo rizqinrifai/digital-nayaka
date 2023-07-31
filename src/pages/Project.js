@@ -35,25 +35,25 @@ export const Project = () => {
 
       <Container>
         <Row>
-          <Col>
+          <Col xs={12} sm={6} md={4} className="mb-5 center">
             <Image src={balapsImage} fluid />
           </Col>
-          <Col>
+          <Col xs={12} sm={6} md={4} className="mb-5">
             <Image src={simotorImage} fluid />
           </Col>
-          <Col>
+          <Col xs={12} sm={6} md={4} className="mb-5">
             <Image src={strackImage} fluid />
           </Col>
         </Row>
 
         <Row style={{ marginTop: "20px" }}>
-          <Col>
+          <Col xs={12} sm={6} md={4} className="mb-5">
             <Image src={dnacoopImage} fluid />
           </Col>
-          <Col>
+          <Col xs={12} sm={6} md={4} className="mb-5">
             <Image src={jayyidImage} fluid />
           </Col>
-          <Col>
+          <Col xs={12} sm={6} md={4} className="mb-5">
             <Image src={warungdanaImage} fluid />
           </Col>
         </Row>

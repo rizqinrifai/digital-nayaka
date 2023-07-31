@@ -41,7 +41,7 @@
     object-fit: contain;
     fontFamily: "Poppins",
 }
-
+/* 
 
 @media (max-width: 768px) {
     .home-section {
@@ -81,4 +81,4 @@
     .home-image {
         display: none;
     }
-}
+} */

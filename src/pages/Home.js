@@ -1,6 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
 import frame1 from "../assets/images/Frame 1000001463.png";
-import "../style/Home.css"; // Update the CSS file path based on its actual location
+import "../style/Home.css";
 
 export const Home = () => {
   return (
@@ -11,7 +11,7 @@ export const Home = () => {
     >
       <Container>
         <Row className="row-home">
-          <Col md={6}>
+          <Col md={6} sm={12}>
             <section className="home-section">
               <h1>
                 <span className="home-title">WE ARE</span>{" "}
@@ -33,7 +33,7 @@ export const Home = () => {
               </p>
             </section>
           </Col>
-          <Col md={6}>
+          <Col md={6} sm={12}>
             <section className="home-section">
               <img
                 alt=""

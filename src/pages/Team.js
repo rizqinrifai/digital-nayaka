@@ -10,6 +10,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Autoplay, Navigation } from "swiper/modules";
 
+//Team
 import danielTeam from "../assets/team/Frame 1000001464.png";
 import deniImage from "../assets/team/Deni.png";
 import adjieImage from "../assets/team/Adjie.png";
@@ -27,6 +28,7 @@ import diahImage from "../assets/team/Diah.png";
 import erlitaImage from "../assets/team/Erlita.png";
 import safiraImage from "../assets/team/Safira.png";
 import syarifImage from "../assets/team/Syarif.png";
+import novaImage from "../assets/team/Nova.png";
 
 export const Team = () => {
   return (
@@ -36,6 +38,7 @@ export const Team = () => {
       style={{
         paddingTop: "150px",
         textAlign: "center",
+        width: "95%",
       }}
     >
       <Container>
@@ -44,6 +47,8 @@ export const Team = () => {
             paddingBottom: "50px",
             color: "#005D8C",
             fontWeight: "bold",
+            alignItems: "center",
+            textAlign: "center",
           }}
         >
           Meet Our Team
@@ -51,16 +56,11 @@ export const Team = () => {
       </Container>
 
       <Row className="justify-content-center">
-        <Col
-          className="row-daniel"
-          md={4}
-          sm={12}
-          style={{ marginLeft: "-100px" }}
-        >
+        <Col md={4} sm={12} className="d-flex justify-content-center mb-5">
           <Image className="img-daniel" alt="Daniel" src={danielTeam} />
         </Col>
 
-        <Col md={4} sm={12} style={{ width: "1000px" }}>
+        <Col className="img-team" md={4} sm={12} style={{ width: "900px" }}>
           <Swiper
             pagination={{
               clickable: true,
@@ -78,7 +78,7 @@ export const Team = () => {
               },
               1024: {
                 slidesPerView: 3,
-                spaceBetween: 50,
+                spaceBetween: 20,
               },
             }}
             autoplay={{
@@ -100,6 +100,9 @@ export const Team = () => {
             </SwiperSlide>
             <SwiperSlide>
               <Image alt="Clief" src={cliefImage} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image alt="Clief" src={novaImage} />
             </SwiperSlide>
             <SwiperSlide>
               <Image alt="Kim" src={kimImage} />

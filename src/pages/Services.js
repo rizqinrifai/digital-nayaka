@@ -30,7 +30,7 @@ export const Services = () => {
       </Container>
       <Container>
         <Row className="mb-4">
-          <Col xs={12} sm={6} className="mb-4">
+          <Col xs={12} md={6} lg={6} className="mb-4">
             <Card>
               <Card.Body>
                 <div className="icon-container">
@@ -49,7 +49,7 @@ export const Services = () => {
             </Card>
           </Col>
 
-          <Col xs={12} sm={6} className="mb-4">
+          <Col xs={12} md={6} lg={6} className="mb-4">
             <Card>
               <Card.Body>
                 <div className="icon-container">
@@ -70,7 +70,7 @@ export const Services = () => {
         </Row>
 
         <Row>
-          <Col xs={12} sm={6} className="mb-4">
+          <Col xs={12} md={6} lg={6} className="mb-4">
             <Card>
               <Card.Body>
                 <div className="icon-container">
@@ -88,7 +88,7 @@ export const Services = () => {
               </Card.Body>
             </Card>
           </Col>
-          <Col xs={12} sm={6} className="mb-4">
+          <Col xs={12} md={6} lg={6} className="mb-4">
             <Card>
               <Card.Body>
                 <div className="icon-container">

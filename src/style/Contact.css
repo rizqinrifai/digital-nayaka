@@ -57,10 +57,9 @@
 .button-contact:hover {
     background: #008AD0;
 }
-
+/* 
 @media (max-width: 414px) {
 
-    /* Hide the Contact Us section when in responsive mode */
     #contact h1,
     #contact div[style*="width: 518px;"],
     #contact a.button-contact,
@@ -75,7 +74,6 @@
 
 @media (max-width: 375px) {
 
-    /* Hide the Contact Us section when in responsive mode */
     #contact h1,
     #contact div[style*="width: 518px;"],
     #contact a.button-contact,
@@ -88,4 +86,4 @@
     }
 
     ;
-}
+} */
