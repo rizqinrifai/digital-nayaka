@@ -1,5 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
-import frame1 from "../assets/images/Frame 1000001463.png";
+import frame1 from "../assets/images/Frame 1000001463.webp";
 import "../style/Home.css";
 
 export const Home = () => {
