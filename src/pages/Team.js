@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Col, Row, Image, Carousel } from "react-bootstrap";
+import { Container, Col, Row, Image } from "react-bootstrap";
 import "../style/Team.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -12,23 +12,24 @@ import { Pagination, Autoplay, Navigation } from "swiper/modules";
 
 //Team
 import danielTeam from "../assets/team/Frame 1000001464.png";
-import deniImage from "../assets/team/Deni.png";
-import adjieImage from "../assets/team/Adjie.png";
-import budiImage from "../assets/team/Budi.png";
-import cliefImage from "../assets/team/Clief.png";
-import andriImage from "../assets/team/Andri.png";
-import kimImage from "../assets/team/Kim.png";
-import rizqiImage from "../assets/team/Rizqi.png";
-import hendyImage from "../assets/team/Hendy.png";
-import raffiImage from "../assets/team/Raffi.png";
-import fahriImage from "../assets/team/Fahri.png";
-import azriImage from "../assets/team/Azri.png";
-import dwiImage from "../assets/team/Dwi.png";
-import diahImage from "../assets/team/Diah.png";
-import erlitaImage from "../assets/team/Erlita.png";
-import safiraImage from "../assets/team/Safira.png";
-import syarifImage from "../assets/team/Syarif.png";
-import novaImage from "../assets/team/Nova.png";
+import deniImage from "../assets/team/Deni.webp";
+import adjieImage from "../assets/team/Adjie.webp";
+import budiImage from "../assets/team/Budi.webp";
+import cliefImage from "../assets/team/Clief.webp";
+import andriImage from "../assets/team/Andri.webp";
+import kimImage from "../assets/team/Kim.webp";
+import rizqiImage from "../assets/team/Rizqi.webp";
+import hendyImage from "../assets/team/Hendy.webp";
+import raffiImage from "../assets/team/Raffi.webp";
+import fahriImage from "../assets/team/Fahri.webp";
+import azriImage from "../assets/team/Azri.webp";
+import dwiImage from "../assets/team/Dwi.webp";
+import diahImage from "../assets/team/Diah.webp";
+import erlitaImage from "../assets/team/Erlita.webp";
+import safiraImage from "../assets/team/Safira.webp";
+import syarifImage from "../assets/team/Syarif.webp";
+import novaImage from "../assets/team/Nova.webp";
+import fadilImage from "../assets/team/Fadhil.webp";
 
 export const Team = () => {
   return (
@@ -132,7 +133,7 @@ export const Team = () => {
               <Image alt="Fahri" src={fahriImage} />
             </SwiperSlide>
             <SwiperSlide>
-              <Image alt="Fadil" src={dwiImage} />
+              <Image alt="Fadil" src={fadilImage} />
             </SwiperSlide>
             <SwiperSlide>
               <Image alt="Azri" src={azriImage} />
