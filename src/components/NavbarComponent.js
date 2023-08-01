@@ -4,7 +4,7 @@ import { BsList, BsX } from "react-icons/bs";
 import dnaImage from "../assets/images/dna.png";
 import "../style/NavbarComponent.css";
 
-const menu = ["Home", "Services", "Career", "Project", "Team"];
+const menu = ["Home", "Services", "Career", "Product", "Team"];
 
 function NavbarComponent() {
   const [isOpen, setIsOpen] = useState(false);

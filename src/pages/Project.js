@@ -10,7 +10,7 @@ import warungdanaImage from "../assets/images/Frame 1000001473.png";
 export const Project = () => {
   return (
     <section
-      id="project"
+      id="product"
       className="project"
       style={{
         padding: "10vh",

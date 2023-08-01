@@ -37,7 +37,7 @@ export const Services = () => {
                   <img alt="" src={android} className="icon" />
                 </div>
                 <Card.Title style={{ paddingTop: "30px" }}>
-                  Android Development
+                  Mobile Development
                 </Card.Title>
                 <Card.Text
                   style={{ paddingLeft: "20px", paddingRight: "20px" }}
