@@ -87,19 +87,31 @@ export const Team = () => {
             }}
           >
             <SwiperSlide>
-              <Image alt="Deni" src={deniImage} />
+              <Image alt="Budi" src={budiImage} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image alt="Adjie" src={deniImage} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image alt="Safira" src={safiraImage} />
             </SwiperSlide>
             <SwiperSlide>
               <Image alt="Adjie" src={adjieImage} />
             </SwiperSlide>
             <SwiperSlide>
+              <Image alt="Syarif" src={syarifImage} />
+            </SwiperSlide>
+            <SwiperSlide>
               <Image alt="Andri" src={andriImage} />
             </SwiperSlide>
             <SwiperSlide>
-              <Image alt="Budi" src={budiImage} />
+              <Image alt="Clief" src={cliefImage} />
             </SwiperSlide>
             <SwiperSlide>
-              <Image alt="Clief" src={cliefImage} />
+              <Image alt="Diah" src={diahImage} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image alt="Erlita" src={erlitaImage} />
             </SwiperSlide>
             <SwiperSlide>
               <Image alt="Clief" src={novaImage} />
@@ -120,22 +132,13 @@ export const Team = () => {
               <Image alt="Fahri" src={fahriImage} />
             </SwiperSlide>
             <SwiperSlide>
+              <Image alt="Fadil" src={dwiImage} />
+            </SwiperSlide>
+            <SwiperSlide>
               <Image alt="Azri" src={azriImage} />
             </SwiperSlide>
             <SwiperSlide>
               <Image alt="Dwi" src={dwiImage} />
-            </SwiperSlide>
-            <SwiperSlide>
-              <Image alt="Erlita" src={erlitaImage} />
-            </SwiperSlide>
-            <SwiperSlide>
-              <Image alt="Diah" src={diahImage} />
-            </SwiperSlide>
-            <SwiperSlide>
-              <Image alt="Safira" src={safiraImage} />
-            </SwiperSlide>
-            <SwiperSlide>
-              <Image alt="Syarif" src={syarifImage} />
             </SwiperSlide>
           </Swiper>
         </Col>
