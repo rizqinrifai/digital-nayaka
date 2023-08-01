@@ -67,6 +67,11 @@
     /* Tambahkan gaya #005D8C lainnya sesuai kebutuhan */
 }
 
+button.navbar-toggler {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
 .btn-contact:hover {
     background-color: #008AD0;
 }

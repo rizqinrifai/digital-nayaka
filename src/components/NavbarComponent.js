@@ -4,10 +4,13 @@ import { BsList, BsX } from "react-icons/bs";
 import dnaImage from "../assets/images/dna.png";
 import "../style/NavbarComponent.css";
 
+const menu = ["Home", "Services", "Career", "Project", "Team"];
+
 function NavbarComponent() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isRed, setIsRed] = useState(false); // State untuk mengontrol gaya merah
+  const [isRed, setIsRed] = useState(false);
+  const [active, setActive] = useState(menu[0]);
 
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
@@ -64,48 +67,32 @@ function NavbarComponent() {
 
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link
-                href="#home"
-                className={`navbar-link me-lg-4 ${isOpen ? "show" : ""}`}
-                style={{ paddingTop: "25px", alignItems: "center" }}
-              >
-                Home
-              </Nav.Link>
-
-              <Nav.Link
-                href="#services"
-                className={`navbar-link me-lg-4 ${isOpen ? "show" : ""}`}
-                style={{ paddingTop: "25px", alignItems: "center" }}
-              >
-                Services
-              </Nav.Link>
-
-              <Nav.Link
-                href="#career"
-                className={`navbar-link me-lg-4 ${isOpen ? "show" : ""}`}
-                style={{ paddingTop: "25px", alignItems: "center" }}
-              >
-                Career
-              </Nav.Link>
-
-              <Nav.Link
-                href="#project"
-                className={`navbar-link me-lg-4 ${isOpen ? "show" : ""}`}
-                style={{ paddingTop: "25px", alignItems: "center" }}
-              >
-                Project
-              </Nav.Link>
-
-              <Nav.Link
-                href="#team"
-                className={`navbar-link me-lg-4 ${isOpen ? "show" : ""}`}
-                style={{ paddingTop: "25px", alignItems: "center" }}
-              >
-                Team
-              </Nav.Link>
+              {menu.map((item, index) => (
+                <button
+                  key={index}
+                  onClick={() => {
+                    setActive(item);
+                    document
+                      .getElementById(String(item).toLowerCase())
+                      .scrollIntoView({
+                        behavior: "smooth",
+                      });
+                  }}
+                  className={`navbar-link me-lg-4`}
+                  style={{
+                    alignItems: "center",
+                    outline: "none",
+                    backgroundColor: "transparent",
+                    border: "none",
+                    color: active === item ? "#005D8C" : "",
+                  }}
+                >
+                  {item}
+                </button>
+              ))}
 
               <span className="navbar-text">
-                <Nav.Link
+                <div
                   href="#contact"
                   style={{
                     textDecoration: "none",
@@ -116,11 +103,31 @@ function NavbarComponent() {
                   }}
                   activeClassName="active"
                 >
-                  <button className="btn-contact d-none d-lg-inline">
+                  <button
+                    onClick={() => {
+                      document
+                        .getElementById(String("contact").toLowerCase())
+                        .scrollIntoView({
+                          behavior: "smooth",
+                        });
+                    }}
+                    className="btn-contact d-none d-lg-inline"
+                  >
                     Contact<i className="ri-contacts-book-line"></i>
                   </button>
-                  <span className="d-lg-none">Contact</span>
-                </Nav.Link>
+                  <span
+                    onClick={() => {
+                      document
+                        .getElementById(String("contact").toLowerCase())
+                        .scrollIntoView({
+                          behavior: "smooth",
+                        });
+                    }}
+                    className="d-lg-none"
+                  >
+                    Contact
+                  </span>
+                </div>
               </span>
             </Nav>
           </Navbar.Collapse>
