@@ -38,7 +38,7 @@ export const Career = () => {
       icon: marketingIcon,
     },
     {
-      title: "Beckend Developer",
+      title: "Backend Developer",
       description:
         "1. Pendidikan minimal D3 Teknologi Informasi\n" +
         "2. Memiliki pengalaman 1 Tahun di bidang Backend Developer\n" +
@@ -90,28 +90,28 @@ export const Career = () => {
         "8. Siap ditempatkan diseluruh cabang Warung Dana",
       icon: accountsupervisorIcon,
     },
-    {
-      title: "Staff Administrator",
-      description:
-        "1. Menyusun dan mengelola Employee, Customer, Client Database (Input data & Arsip data)\n" +
-        "2. Memastikan proses administrasi berjalan dengan baik\n" +
-        "3. Membantu tim finance dalam proses pencairan dana\n" +
-        "4. Monitoring jumlah pencairan dana dan berkordinasi dengan finance\n" +
-        "5. Menyusun dan menginformasikan jadwal meeting, acara, dan kegiatan lainnya\n" +
-        "6. Menguasai Ms. Office (Word, Excell, Power Point)",
-      icon: staffadminIcon,
-    },
-    {
-      title: "IT Helpdesk",
-      description:
-        "1. Pendidikan minimal D3 Teknologi Informasi\n" +
-        "2. Pengalaman minimal 1 Tahun, fresh graduates are welcome to apply\n" +
-        "3. Menguasai HTML, CSS, JavaScript, Layout, Responsive Web, jQuery, Rest API, Bootstrap CSS (Understanding Vue.js is a plus)\n" +
-        "4. Menguasai alur atau proses akunting\n" +
-        "5. Mampu bekerja secara detail dan akurat\n" +
-        "6. Penempatan Bekasi",
-      icon: businesmentIcon,
-    },
+    // {
+    //   title: "Staff Administrator",
+    //   description:
+    //     "1. Menyusun dan mengelola Employee, Customer, Client Database (Input data & Arsip data)\n" +
+    //     "2. Memastikan proses administrasi berjalan dengan baik\n" +
+    //     "3. Membantu tim finance dalam proses pencairan dana\n" +
+    //     "4. Monitoring jumlah pencairan dana dan berkordinasi dengan finance\n" +
+    //     "5. Menyusun dan menginformasikan jadwal meeting, acara, dan kegiatan lainnya\n" +
+    //     "6. Menguasai Ms. Office (Word, Excell, Power Point)",
+    //   icon: staffadminIcon,
+    // },
+    // {
+    //   title: "IT Helpdesk",
+    //   description:
+    //     "1. Pendidikan minimal D3 Teknologi Informasi\n" +
+    //     "2. Pengalaman minimal 1 Tahun, fresh graduates are welcome to apply\n" +
+    //     "3. Menguasai HTML, CSS, JavaScript, Layout, Responsive Web, jQuery, Rest API, Bootstrap CSS (Understanding Vue.js is a plus)\n" +
+    //     "4. Menguasai alur atau proses akunting\n" +
+    //     "5. Mampu bekerja secara detail dan akurat\n" +
+    //     "6. Penempatan Bekasi",
+    //   icon: businesmentIcon,
+    // },
   ];
 
   const [activeCard, setActiveCard] = useState(null);

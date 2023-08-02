@@ -43,7 +43,7 @@ export const Services = () => {
                   style={{ paddingLeft: "20px", paddingRight: "20px" }}
                 >
                   We're experts in developing apps from design to registration
-                  on Google Play.
+                  on Google Play and App Store.
                 </Card.Text>
               </Card.Body>
             </Card>
