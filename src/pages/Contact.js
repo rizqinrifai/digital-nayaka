@@ -14,7 +14,7 @@ export const Contact = () => {
         textAlign: "center",
       }}
     >
-      <Container>
+      {/* <Container>
         <h1
           style={{
             paddingBottom: "50px",
@@ -25,7 +25,7 @@ export const Contact = () => {
           Our Partner
         </h1>
         <Row></Row>
-      </Container>
+      </Container> */}
 
       <Container id="contact">
         <h1
