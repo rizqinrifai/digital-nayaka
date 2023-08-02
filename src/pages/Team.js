@@ -83,8 +83,9 @@ export const Team = () => {
               },
             }}
             autoplay={{
-              delay: 2500,
+              delay: 3500,
               disableOnInteraction: false,
+              waitForTransition: true,
             }}
           >
             <SwiperSlide>
@@ -94,25 +95,25 @@ export const Team = () => {
               <Image alt="Adjie" src={deniImage} />
             </SwiperSlide>
             <SwiperSlide>
-              <Image alt="Safira" src={safiraImage} />
+              <Image alt="Safira" src={adjieImage} />
             </SwiperSlide>
             <SwiperSlide>
-              <Image alt="Adjie" src={adjieImage} />
+              <Image alt="Adjie" src={andriImage} />
             </SwiperSlide>
             <SwiperSlide>
               <Image alt="Syarif" src={syarifImage} />
             </SwiperSlide>
             <SwiperSlide>
-              <Image alt="Andri" src={andriImage} />
+              <Image alt="Andri" src={safiraImage} />
             </SwiperSlide>
             <SwiperSlide>
-              <Image alt="Clief" src={cliefImage} />
+              <Image alt="Clief" src={diahImage} />
             </SwiperSlide>
             <SwiperSlide>
-              <Image alt="Diah" src={diahImage} />
+              <Image alt="Diah" src={erlitaImage} />
             </SwiperSlide>
             <SwiperSlide>
-              <Image alt="Erlita" src={erlitaImage} />
+              <Image alt="Erlita" src={cliefImage} />
             </SwiperSlide>
             <SwiperSlide>
               <Image alt="Clief" src={novaImage} />
