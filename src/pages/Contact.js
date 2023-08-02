@@ -9,7 +9,7 @@ export const Contact = () => {
     <section
       className="contact"
       style={{
-        paddingTop: "150px",
+        // paddingTop: "150px",
         paddingBottom: "15px",
         textAlign: "center",
       }}
@@ -31,7 +31,7 @@ export const Contact = () => {
         <h1
           className="mb-3"
           style={{
-            paddingTop: "100px",
+            // paddingTop: "100px",
             paddingBottom: "15px",
             color: "#005D8C",
             fontWeight: "bold",
@@ -88,7 +88,6 @@ export const Contact = () => {
             md={6}
             className="embed-responsive embed-responsive-4by3"
           >
-            {/* Google Maps iframe */}
             <iframe
               title="Google Maps"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.616133051055!2d106.9735196!3d-6.2752565!2m3!1f0!2f17.5!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698d7c1e72f359%3A0x51e794bd85b95c9!2sDNA%20Space!5e0!3m2!1sen!2sid!4v1626516523999!5m2!1sen!2sid"
