@@ -2,6 +2,32 @@
     margin: 0 !important;
 }
 
+/* Di file Project.css atau CSS terpisah Anda */
+.img-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.img-hover-zoom {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.img-hover-zoom:hover {
+    transform: scale(1.1);
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .img-container {
+        /* Sesuaikan lebar sesuai kebutuhan untuk perangkat mobile */
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
+
 /* @media (max-width: 414px) {
 .project .container {
         overflow: hidden;

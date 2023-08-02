@@ -36,25 +36,37 @@ export const Project = () => {
       <Container>
         <Row>
           <Col xs={12} sm={6} md={4} className="mb-5 center">
-            <Image src={balapsImage} fluid />
+            <a href="https://balaps.id/" target="_blank">
+              <Image src={balapsImage} fluid className="img-hover-zoom" />
+            </a>
           </Col>
           <Col xs={12} sm={6} md={4} className="mb-5">
-            <Image src={simotorImage} fluid />
+            <a href="https://simotor.id/" target="_blank">
+              <Image src={simotorImage} fluid className="img-hover-zoom" />
+            </a>
           </Col>
           <Col xs={12} sm={6} md={4} className="mb-5">
-            <Image src={strackImage} fluid />
+            <a href="https://strack.id/" target="_blank">
+              <Image src={strackImage} fluid className="img-hover-zoom" />
+            </a>
           </Col>
         </Row>
 
-        <Row style={{ marginTop: "20px" }}>
+        <Row style={{ marginTop: "10px" }}>
           <Col xs={12} sm={6} md={4} className="mb-5">
-            <Image src={dnacoopImage} fluid />
+            <a href="your-dnacoop-url" target="_blank">
+              <Image src={dnacoopImage} fluid className="img-hover-zoom" />
+            </a>
           </Col>
           <Col xs={12} sm={6} md={4} className="mb-5">
-            <Image src={jayyidImage} fluid />
+            <a href="your-jayyid-url" target="_blank">
+              <Image src={jayyidImage} fluid className="img-hover-zoom" />
+            </a>
           </Col>
           <Col xs={12} sm={6} md={4} className="mb-5">
-            <Image src={warungdanaImage} fluid />
+            <a href="http://www.warungdana.com/" target="_blank">
+              <Image src={warungdanaImage} fluid className="img-hover-zoom" />
+            </a>
           </Col>
         </Row>
       </Container>
