@@ -32,7 +32,7 @@ export const Contact = () => {
           className="mb-3"
           style={{
             // paddingTop: "100px",
-            paddingBottom: "15px",
+            paddingBottom: "20px",
             color: "#005D8C",
             fontWeight: "bold",
           }}
