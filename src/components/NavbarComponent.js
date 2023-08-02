@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import { BsList, BsX } from "react-icons/bs";
-import dnaImage from "../assets/images/dna.png";
+import dnaImage from "../assets/images/dna.webp";
 import "../style/NavbarComponent.css";
 
-const menu = ["Home", "Services", "Career", "Product", "Team"];
+const menu = ["Home", "Services", "Product", "Team", "Career"];
 
 function NavbarComponent() {
   const [isOpen, setIsOpen] = useState(false);
@@ -60,7 +60,6 @@ function NavbarComponent() {
           <Navbar.Toggle
             aria-controls="basic-navbar-nav"
             onClick={toggleNavbar}
-            // style={{ color: "#005D8C", fontSize: "30px" }}
           >
             {isOpen ? <BsX /> : <BsList />}
           </Navbar.Toggle>

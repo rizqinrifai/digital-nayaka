@@ -7,6 +7,7 @@ import { Project } from "./pages/Project";
 import { Team } from "./pages/Team";
 import { Contact } from "./pages/Contact";
 import { Footer } from "./pages/Footer";
+import { Counter } from "./pages/Counter";
 
 function App() {
   return (
@@ -16,9 +17,10 @@ function App() {
 
         <Home />
         <Services />
-        <Career />
         <Project />
+        <Counter />
         <Team />
+        <Career />
         <Contact />
 
         {/* <Routes>

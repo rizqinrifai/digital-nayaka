@@ -1,10 +1,11 @@
 import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import "../style/Services.css";
-import android from "../assets/icons/android 1.png";
-import dekstopDev from "../assets/icons/coding 1-1.png";
-import websiteIcon from "../assets/icons/coding (1) 1-1.png";
-import cloudIcon from "../assets/icons/cloud 1.png";
+import mobile from "../assets/icons/Mobile.png";
+import dekstopDev from "../assets/icons/Desktop.png";
+import websiteIcon from "../assets/icons/Website.png";
+import cloudIcon from "../assets/icons/Cloud.png";
+import productSystemIcon from "../assets/icons/product system.png";
 
 export const Services = () => {
   return (
@@ -13,7 +14,7 @@ export const Services = () => {
       className="services"
       style={{
         padding: "10vh",
-        paddingTop: "150px",
+        paddingTop: "120px",
         textAlign: "center",
       }}
     >
@@ -34,16 +35,16 @@ export const Services = () => {
             <Card>
               <Card.Body>
                 <div className="icon-container">
-                  <img alt="" src={android} className="icon" />
+                  <img alt="" src={productSystemIcon} className="icon" />
                 </div>
                 <Card.Title style={{ paddingTop: "30px" }}>
-                  Mobile Development
+                  Product System
                 </Card.Title>
                 <Card.Text
                   style={{ paddingLeft: "20px", paddingRight: "20px" }}
                 >
-                  We're experts in developing apps from design to registration
-                  on Google Play and App Store.
+                  Unlock Your Vision: Our Product System Development Delivers
+                  Success!
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -82,13 +83,33 @@ export const Services = () => {
                 <Card.Text
                   style={{ paddingLeft: "20px", paddingRight: "20px" }}
                 >
-                  We provide website creation services for various types of
-                  businesses
+                  We create customized, visually appealing, and functional
+                  websites for businesses of all sizes and industries.
                 </Card.Text>
               </Card.Body>
             </Card>
           </Col>
           <Col xs={12} md={6} lg={6} className="mb-4">
+            <Card>
+              <Card.Body>
+                <div className="icon-container">
+                  <img alt="" src={mobile} className="icon" />
+                </div>
+                <Card.Title style={{ paddingTop: "30px" }}>
+                  Mobile Development
+                </Card.Title>
+                <Card.Text
+                  style={{ paddingLeft: "20px", paddingRight: "20px" }}
+                >
+                  We're experts in developing apps from design to registration
+                  on Google Play and App Store.
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
+        <Row>
+          <Col xs={12} md={{ span: 6, offset: 3 }} lg={6} className="mb-4">
             <Card>
               <Card.Body>
                 <div className="icon-container">

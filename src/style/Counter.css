@@ -1,0 +1,39 @@
+.counter {
+    background: linear-gradient(-45deg, #aed8ff, #ffffff 50%);
+}
+
+.counter-user,
+.counter-partner {
+    color: #005d8c;
+    font-weight: bold;
+    font-size: 35px;
+    font-family: "Poppins";
+    opacity: 0;
+    /* Initial opacity set to 0 */
+    transform: translateY(20px);
+    /* Initial position to animate from */
+    transition: opacity 1s, transform 1s;
+}
+
+.text-user,
+.text-partner {
+    color: #008ad0;
+    font-size: 25px;
+    font-family: "Poppins";
+    opacity: 0;
+    /* Initial opacity set to 0 */
+    transform: translateY(20px);
+    /* Initial position to animate from */
+    transition: opacity 1s, transform 1s;
+}
+
+/* Animation classes to apply when in viewport */
+.count-up {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}

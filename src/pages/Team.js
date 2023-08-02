@@ -63,6 +63,7 @@ export const Team = () => {
 
         <Col className="img-team" md={4} sm={12} style={{ width: "900px" }}>
           <Swiper
+            loop={true}
             pagination={{
               clickable: true,
             }}
@@ -88,9 +89,9 @@ export const Team = () => {
               waitForTransition: true,
             }}
           >
-            <SwiperSlide>
+            {/* <SwiperSlide>
               <Image alt="Budi" src={budiImage} />
-            </SwiperSlide>
+            </SwiperSlide> */}
             <SwiperSlide>
               <Image alt="Adjie" src={deniImage} />
             </SwiperSlide>

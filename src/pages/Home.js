@@ -7,7 +7,11 @@ export const Home = () => {
     <section
       id="home"
       className="home"
-      style={{ paddingTop: "120px", fontFamily: "Poppins" }}
+      style={{
+        paddingTop: "120px",
+        paddingBottom: "20px",
+        fontFamily: "Poppins",
+      }}
     >
       <Container>
         <Row className="row-home">

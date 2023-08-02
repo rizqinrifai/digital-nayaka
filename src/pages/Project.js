@@ -15,7 +15,7 @@ export const Project = () => {
       style={{
         padding: "10vh",
         paddingTop: "150px",
-        paddingBottom: "220px",
+        paddingBottom: "100px",
         textAlign: "center",
         backgroundColor: "#F4FAFD",
         backgroundPosition: "cover",

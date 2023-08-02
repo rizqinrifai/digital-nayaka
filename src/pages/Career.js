@@ -130,7 +130,7 @@ export const Career = () => {
       className="career"
       style={{
         padding: "10vh",
-        paddingTop: "150px",
+        paddingTop: "120px",
         paddingBottom: "230px",
         textAlign: "center",
       }}
