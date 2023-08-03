@@ -10,7 +10,7 @@ export const Contact = () => {
   return (
     <section
       className="contact"
-      style={{ paddingBottom: "15px", textAlign: "center" }}
+      style={{ paddingTop: "40px", paddingBottom: "15px", textAlign: "center" }}
     >
       <Container id="contact">
         <h1
