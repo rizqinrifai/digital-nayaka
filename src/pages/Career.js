@@ -309,7 +309,7 @@ export const Career = () => {
               },
             }}
             autoplay={{
-              delay: 3500,
+              delay: 2500,
               disableOnInteraction: false,
               waitForTransition: true,
             }}

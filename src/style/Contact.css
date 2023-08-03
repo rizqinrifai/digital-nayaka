@@ -57,33 +57,19 @@
 .button-contact:hover {
     background: #008AD0;
 }
-/* 
-@media (max-width: 414px) {
 
-    #contact h1,
-    #contact div[style*="width: 518px;"],
-    #contact a.button-contact,
-    #contact iframe {
-        display: none;
-    }
-
-        .row>* {
-            padding: 10px;
-        };
+.instagram-image {
+    transition: transform 0.3s ease;
 }
 
-@media (max-width: 375px) {
+.instagram-link:hover .instagram-image {
+    transform: scale(1.1);
+}
 
-    #contact h1,
-    #contact div[style*="width: 518px;"],
-    #contact a.button-contact,
-    #contact iframe {
-        display: none;
-    }
+.linkedin-image {
+    transition: transform 0.3s ease;
+}
 
-    .row>* {
-        padding: 10px;
-    }
-
-    ;
-} */
+.linkedin-link:hover .linkedin-image {
+    transform: scale(1.1);
+}

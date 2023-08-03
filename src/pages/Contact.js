@@ -1,37 +1,21 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Image } from "react-bootstrap";
 import "../style/Contact.css";
 import { FaWhatsapp } from "react-icons/fa";
 import ThemeProvider from "react-bootstrap/ThemeProvider";
+import linkedinImage from "../assets/images/Linkedin.png";
+import instagramImage from "../assets/images/Instagram.png";
 
 export const Contact = () => {
   return (
     <section
       className="contact"
-      style={{
-        // paddingTop: "150px",
-        paddingBottom: "15px",
-        textAlign: "center",
-      }}
+      style={{ paddingBottom: "15px", textAlign: "center" }}
     >
-      {/* <Container>
-        <h1
-          style={{
-            paddingBottom: "50px",
-            color: "#005D8C",
-            fontWeight: "bold",
-          }}
-        >
-          Our Partner
-        </h1>
-        <Row></Row>
-      </Container> */}
-
       <Container id="contact">
         <h1
           className="mb-3"
           style={{
-            // paddingTop: "100px",
             paddingBottom: "20px",
             color: "#005D8C",
             fontWeight: "bold",
@@ -43,8 +27,51 @@ export const Contact = () => {
         <Row>
           <Col xs={12} md={6} style={{ textAlign: "center" }}>
             <Row>
-              <Col>
-                <div className="address-container">
+              <div className="address-container">
+                <h4>Social Media</h4>
+              </div>
+
+              <Col xs={12} md={12} className="mb-3">
+                <div>
+                  <a
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="instagram-link"
+                  >
+                    <Image
+                      alt="Instagram"
+                      src={instagramImage}
+                      style={{ height: "40px", width: "83%" }}
+                      className="img-fluid instagram-image"
+                    />
+                  </a>
+                </div>
+              </Col>
+
+              <Col xs={12} md={12} className="mb-3">
+                <div>
+                  <a
+                    href="https://www.linkedin.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="linkedin-link"
+                  >
+                    <Image
+                      alt="LinkedIn"
+                      src={linkedinImage}
+                      style={{ height: "40px", width: "83%" }}
+                      className="img-fluid linkedin-image"
+                    />
+                  </a>
+                </div>
+              </Col>
+            </Row>
+
+            <Row>
+              <Col style={{ paddingTop: "15px" }}>
+                <div className="address-container text-center">
+                  {" "}
                   <h4>Address</h4>
                   <p>
                     Ruko Sentra Komersil (Rsk) Blok 7/96 Grand Galaxy City,
@@ -54,6 +81,7 @@ export const Contact = () => {
                 </div>
               </Col>
             </Row>
+
             <Row>
               <Col xs={12} md={12} className="mb-3">
                 <div
