@@ -69,7 +69,7 @@ export const Partners = () => {
   }, [swiperMounted]);
 
   return (
-    <section>
+    <section id="contact">
       <div
         className="mb-3"
         style={{

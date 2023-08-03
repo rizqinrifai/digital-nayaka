@@ -12,7 +12,7 @@ export const Contact = () => {
       className="contact"
       style={{ paddingTop: "40px", paddingBottom: "15px", textAlign: "center" }}
     >
-      <Container id="contact">
+      <Container>
         <h1
           className="mb-3"
           style={{
