@@ -16,6 +16,7 @@ export const Contact = () => {
         <h1
           className="mb-3"
           style={{
+            paddingTop: "60px",
             paddingBottom: "20px",
             color: "#005D8C",
             fontWeight: "bold",

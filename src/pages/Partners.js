@@ -32,7 +32,7 @@ export const Partners = () => {
       >
         <h1
           style={{
-            paddingTop: "100px",
+            paddingTop: "70px",
             paddingBottom: "35px",
             color: "#005D8C",
             fontWeight: "bold",
