@@ -42,7 +42,7 @@ export const Contact = () => {
                     <Image
                       alt="Instagram"
                       src={instagramImage}
-                      style={{ height: "40px", width: "83%" }}
+                      style={{ height: "50px", width: "83%" }}
                       className="img-fluid instagram-image"
                     />
                   </a>
@@ -60,7 +60,7 @@ export const Contact = () => {
                     <Image
                       alt="LinkedIn"
                       src={linkedinImage}
-                      style={{ height: "40px", width: "83%" }}
+                      style={{ height: "50px", width: "83%" }}
                       className="img-fluid linkedin-image"
                     />
                   </a>
