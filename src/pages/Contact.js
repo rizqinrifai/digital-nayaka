@@ -36,7 +36,7 @@ export const Contact = () => {
               <Col xs={12} md={12} className="mb-3">
                 <div>
                   <a
-                    href="https://www.instagram.com/"
+                    href="https://www.instagram.com/digitalnayaka.official"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="instagram-link"
@@ -54,7 +54,7 @@ export const Contact = () => {
               <Col xs={12} md={12} className="mb-3">
                 <div>
                   <a
-                    href="https://www.linkedin.com/"
+                    href="https://www.linkedin.com/company/pt-digital-nyaka-abhinaya"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="linkedin-link"
