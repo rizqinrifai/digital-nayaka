@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Col, Image } from "react-bootstrap";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -19,6 +19,55 @@ import gambar10 from "../assets/Partner/10.png";
 import gambar11 from "../assets/Partner/11.png";
 
 export const Partners = () => {
+  const [swiperMounted, setSwiperMounted] = useState(false);
+
+  // Create a ref to access the Swiper instance
+  const swiperRef = useRef(null);
+
+  useEffect(() => {
+    setSwiperMounted(true);
+  }, []);
+
+  useEffect(() => {
+    if (swiperMounted) {
+      // Pause autoplay on component mount
+      const swiperInstance = swiperRef.current;
+      if (swiperInstance && swiperInstance.autoplay) {
+        swiperInstance.autoplay.stop();
+      }
+
+      // Add event listener to check scroll position
+      const handleScroll = () => {
+        const swiperInstance = swiperRef.current;
+        if (swiperInstance && swiperInstance.el) {
+          const swiperHeight = swiperInstance.el.offsetHeight;
+          const swiperOffsetTop = swiperInstance.el.offsetTop;
+          const scrollY = window.scrollY;
+          const windowHeight = window.innerHeight;
+
+          if (
+            scrollY + windowHeight > swiperOffsetTop &&
+            scrollY < swiperOffsetTop + swiperHeight
+          ) {
+            // Resume autoplay when the Swiper is visible in the viewport
+            swiperInstance.autoplay.start();
+          } else {
+            // Pause autoplay when the Swiper is not visible in the viewport
+            swiperInstance.autoplay.stop();
+          }
+        }
+      };
+
+      // Add the event listener to handle scroll
+      window.addEventListener("scroll", handleScroll);
+
+      // Remove the event listener on component unmount
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }
+  }, [swiperMounted]);
+
   return (
     <section>
       <div
@@ -43,6 +92,7 @@ export const Partners = () => {
 
         <Col xs={12} md={6} lg={8} className="mx-auto">
           <Swiper
+            ref={swiperRef} // Set the ref to access the Swiper instance
             loop={true}
             modules={[Autoplay, Navigation]}
             className="mySwiper"
