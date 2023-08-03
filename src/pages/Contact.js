@@ -3,12 +3,13 @@ import { Container, Row, Col, Image } from "react-bootstrap";
 import "../style/Contact.css";
 import { FaWhatsapp } from "react-icons/fa";
 import ThemeProvider from "react-bootstrap/ThemeProvider";
-import linkedinImage from "../assets/images/Linkedin.png";
-import instagramImage from "../assets/images/Instagram.png";
+import linkedinImage from "../assets/images/Frame 28.png";
+import instagramImage from "../assets/images/Frame 29.png";
 
 export const Contact = () => {
   return (
     <section
+      id="contact"
       className="contact"
       style={{ paddingTop: "40px", paddingBottom: "15px", textAlign: "center" }}
     >
@@ -74,7 +75,7 @@ export const Contact = () => {
                 <div className="address-container text-center">
                   {" "}
                   <h4>Address</h4>
-                  <p>
+                  <p className="mx-4">
                     Ruko Sentra Komersil (Rsk) Blok 7/96 Grand Galaxy City,
                     Kelurahan Jakasetia, Kecamatan Bekasi Selatan, Kota Bekasi,
                     Jawa Barat.

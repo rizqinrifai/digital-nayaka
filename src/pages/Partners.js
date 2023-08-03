@@ -69,7 +69,7 @@ export const Partners = () => {
   }, [swiperMounted]);
 
   return (
-    <section id="contact">
+    <section>
       <div
         className="mb-3"
         style={{
@@ -92,8 +92,8 @@ export const Partners = () => {
 
         <Col xs={12} md={6} lg={8} className="mx-auto">
           <Swiper
-            ref={swiperRef} // Set the ref to access the Swiper instance
             loop={true}
+            ref={swiperRef}
             modules={[Autoplay, Navigation]}
             className="mySwiper"
             breakpoints={{
@@ -111,8 +111,8 @@ export const Partners = () => {
               },
             }}
             autoplay={{
-              delay: 2500,
-              disableOnInteraction: false,
+              delay: 1500,
+              disableOnInteraction: true,
               waitForTransition: true,
             }}
           >
