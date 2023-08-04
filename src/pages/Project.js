@@ -7,7 +7,15 @@ import dnacoopImage from "../assets/images/Frame 1000001475.png";
 import jayyidImage from "../assets/images/Frame 1000001474.png";
 import warungdanaImage from "../assets/images/Frame 1000001473.png";
 
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 export const Project = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <section
       id="product"
@@ -28,13 +36,16 @@ export const Project = () => {
             fontWeight: "bold",
             paddingBottom: "30px",
           }}
+          data-aos="fade-down"
+          data-aos-delay="50"
+          data-aos-duration="1000"
         >
           Our Product
         </h1>
       </Container>
 
       <Container>
-        <Row>
+        <Row data-aos="flip-up" data-aos-delay="50" data-aos-duration="1000">
           <Col xs={12} sm={6} md={4} className="mb-5 center">
             <a href="https://balaps.id/" target="_blank">
               <Image src={balapsImage} fluid className="img-hover-zoom" />
@@ -52,7 +63,12 @@ export const Project = () => {
           </Col>
         </Row>
 
-        <Row style={{ marginTop: "10px" }}>
+        <Row
+          style={{ marginTop: "10px" }}
+          data-aos="flip-up"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+        >
           <Col xs={12} sm={6} md={4} className="mb-5">
             <a href="your-dnacoop-url" target="_blank">
               <Image src={dnacoopImage} fluid className="img-hover-zoom" />

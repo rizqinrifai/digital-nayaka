@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect } from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import "../style/Services.css";
 import mobile from "../assets/icons/Mobile.png";
@@ -6,8 +7,14 @@ import dekstopDev from "../assets/icons/Desktop.png";
 import websiteIcon from "../assets/icons/Website.png";
 import cloudIcon from "../assets/icons/Cloud.png";
 import productSystemIcon from "../assets/icons/product system.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export const Services = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <section
       id="services"
@@ -25,13 +32,24 @@ export const Services = () => {
             color: "#005D8C",
             fontWeight: "bold",
           }}
+          data-aos="fade-down"
+          data-aos-delay="50"
+          data-aos-duration="1000"
         >
           Our Services
         </h1>
       </Container>
       <Container>
         <Row className="mb-4">
-          <Col xs={12} md={6} lg={6} className="mb-4">
+          <Col
+            xs={12}
+            md={6}
+            lg={6}
+            className="mb-4"
+            data-aos="fade-right"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          >
             <Card>
               <Card.Body>
                 <div className="icon-container">
@@ -50,7 +68,15 @@ export const Services = () => {
             </Card>
           </Col>
 
-          <Col xs={12} md={6} lg={6} className="mb-4">
+          <Col
+            xs={12}
+            md={6}
+            lg={6}
+            className="mb-4"
+            data-aos="fade-left"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          >
             <Card>
               <Card.Body>
                 <div className="icon-container">
@@ -71,7 +97,7 @@ export const Services = () => {
         </Row>
 
         <Row>
-          <Col xs={12} md={6} lg={6} className="mb-4">
+          <Col xs={12} md={6} lg={6} className="mb-4" data-aos="fade-right">
             <Card>
               <Card.Body>
                 <div className="icon-container">
@@ -89,7 +115,7 @@ export const Services = () => {
               </Card.Body>
             </Card>
           </Col>
-          <Col xs={12} md={6} lg={6} className="mb-4">
+          <Col xs={12} md={6} lg={6} className="mb-4" data-aos="fade-left">
             <Card>
               <Card.Body>
                 <div className="icon-container">
@@ -109,7 +135,13 @@ export const Services = () => {
           </Col>
         </Row>
         <Row>
-          <Col xs={12} md={{ span: 6, offset: 3 }} lg={6} className="mb-4">
+          <Col
+            xs={12}
+            md={{ span: 6, offset: 3 }}
+            lg={6}
+            className="mb-4"
+            data-aos="fade-up"
+          >
             <Card>
               <Card.Body>
                 <div className="icon-container">

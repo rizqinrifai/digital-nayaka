@@ -13,7 +13,15 @@ import accountsupervisorIcon from "../assets/icons/supervisor 1.png";
 import businesmentIcon from "../assets/icons/businessman 1.png";
 import backgroundRec from "../assets/images/Rectangle 9.png";
 
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 export const Career = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   const careers = [
     {
       title: "Frontend Developer",
@@ -142,13 +150,20 @@ export const Career = () => {
             color: "#005D8C",
             fontWeight: "bold",
           }}
+          data-aos="fade-down"
+          data-aos-delay="50"
+          data-aos-duration="1000"
         >
           Career Opportunities
         </h1>
       </Container>
 
       <Container>
-        <Row>
+        <Row
+          data-aos="zoom-out-up"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+        >
           {careers.map((career, index) => (
             <Col key={index} xs={12} sm={12} md={6} lg={6} className="mb-4">
               <div

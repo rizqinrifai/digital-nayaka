@@ -18,7 +18,13 @@ import gambar9 from "../assets/Partner/9.png";
 import gambar10 from "../assets/Partner/10.png";
 import gambar11 from "../assets/Partner/11.png";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 export const Partners = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   const [swiperMounted, setSwiperMounted] = useState(false);
 
   // Create a ref to access the Swiper instance
@@ -86,11 +92,24 @@ export const Partners = () => {
             color: "#005D8C",
             fontWeight: "bold",
           }}
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-delay="50"
+          data-aos-duration="1000"
         >
           Our Partners
         </h1>
 
-        <Col xs={12} md={6} lg={8} className="mx-auto">
+        <Col
+          xs={12}
+          md={6}
+          lg={8}
+          className="mx-auto"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+        >
           <Swiper
             loop={true}
             ref={swiperRef}

@@ -1,8 +1,15 @@
+import { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import frame1 from "../assets/images/Frame 1000001463.webp";
 import "../style/Home.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export const Home = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <section
       id="home"
@@ -16,7 +23,12 @@ export const Home = () => {
       <Container>
         <Row className="row-home">
           <Col md={6} sm={12}>
-            <section className="home-section pt-5">
+            <section
+              className="home-section pt-5"
+              data-aos="fade-right"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+            >
               <h1>
                 <span className="home-title">WE ARE</span>{" "}
                 <span className="home-title2">DNA</span>
@@ -38,7 +50,12 @@ export const Home = () => {
             </section>
           </Col>
           <Col md={6} sm={12} className="pt-3">
-            <section className="home-section">
+            <section
+              className="home-section"
+              data-aos="fade-left"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+            >
               <img
                 alt=""
                 src={frame1}

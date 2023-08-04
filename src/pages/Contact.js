@@ -6,7 +6,15 @@ import ThemeProvider from "react-bootstrap/ThemeProvider";
 import linkedinImage from "../assets/images/Frame 28.png";
 import instagramImage from "../assets/images/Frame 29.png";
 
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 export const Contact = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <section
       id="contact"
@@ -22,11 +30,19 @@ export const Contact = () => {
             color: "#005D8C",
             fontWeight: "bold",
           }}
+          data-aos="fade-down"
+          data-aos-delay="50"
+          data-aos-duration="1000"
         >
           Contact Us
         </h1>
 
-        <Row>
+        <Row
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+        >
           <Col xs={12} md={6} style={{ textAlign: "center" }}>
             <Row>
               <div className="address-container">

@@ -31,7 +31,15 @@ import syarifImage from "../assets/team/Syarif.webp";
 import novaImage from "../assets/team/Nova.webp";
 import fadilImage from "../assets/team/Fadhil.webp";
 
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 export const Team = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <section
       id="team"
@@ -51,12 +59,19 @@ export const Team = () => {
             alignItems: "center",
             textAlign: "center",
           }}
+          data-aos="fade-down"
         >
           Meet Our Team
         </h1>
       </Container>
 
-      <Row className="justify-content-center">
+      <Row
+        className="justify-content-center"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+      >
         <Col md={4} sm={12} className="d-flex justify-content-center mb-5">
           <Image className="img-daniel" alt="Daniel" src={danielTeam} />
         </Col>
