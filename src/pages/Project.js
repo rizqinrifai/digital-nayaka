@@ -45,41 +45,84 @@ export const Project = () => {
       </Container>
 
       <Container>
-        <Row data-aos="flip-up" data-aos-delay="50" data-aos-duration="1000">
-          <Col xs={12} sm={6} md={4} className="mb-5 center">
+        <Row>
+          <Col
+            xs={12}
+            sm={6}
+            md={4}
+            className="mb-5 center"
+            data-aos="fade-right"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          >
             <a href="https://balaps.id/" target="_blank">
               <Image src={balapsImage} fluid className="img-hover-zoom" />
             </a>
           </Col>
-          <Col xs={12} sm={6} md={4} className="mb-5">
+          <Col
+            xs={12}
+            sm={6}
+            md={4}
+            className="mb-5"
+            data-aos="zoom-in"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          >
             <a href="https://simotor.id/" target="_blank">
               <Image src={simotorImage} fluid className="img-hover-zoom" />
             </a>
           </Col>
-          <Col xs={12} sm={6} md={4} className="mb-5">
+          <Col
+            xs={12}
+            sm={6}
+            md={4}
+            className="mb-5"
+            data-aos="fade-left"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          >
             <a href="https://strack.id/" target="_blank">
               <Image src={strackImage} fluid className="img-hover-zoom" />
             </a>
           </Col>
         </Row>
 
-        <Row
-          style={{ marginTop: "10px" }}
-          data-aos="flip-up"
-          data-aos-delay="50"
-          data-aos-duration="1000"
-        >
-          <Col xs={12} sm={6} md={4} className="mb-5">
+        <Row style={{ marginTop: "10px" }}>
+          <Col
+            xs={12}
+            sm={6}
+            md={4}
+            className="mb-5"
+            data-aos="fade-right"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          >
             <a href="your-dnacoop-url" target="_blank">
               <Image src={dnacoopImage} fluid className="img-hover-zoom" />
             </a>
           </Col>
-          <Col xs={12} sm={6} md={4} className="mb-5">
+          <Col
+            xs={12}
+            sm={6}
+            md={4}
+            className="mb-5"
+            data-aos="zoom-in"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          >
             <a href="your-jayyid-url" target="_blank">
               <Image src={jayyidImage} fluid className="img-hover-zoom" />
             </a>
           </Col>
-          <Col xs={12} sm={6} md={4} className="mb-5">
+          <Col
+            xs={12}
+            sm={6}
+            md={4}
+            className="mb-5"
+            data-aos="fade-left"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          >
             <a href="http://www.warungdana.com/" target="_blank">
               <Image src={warungdanaImage} fluid className="img-hover-zoom" />
             </a>
