@@ -159,13 +159,19 @@ export const Career = () => {
       </Container>
 
       <Container>
-        <Row
-          data-aos="zoom-out-up"
-          data-aos-delay="50"
-          data-aos-duration="1000"
-        >
+        <Row>
           {careers.map((career, index) => (
-            <Col key={index} xs={12} sm={12} md={6} lg={6} className="mb-4">
+            <Col
+              key={index}
+              xs={12}
+              sm={12}
+              md={6}
+              lg={6}
+              className="mb-4"
+              data-aos="zoom-out-up"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+            >
               <div
                 onClick={() => handleCardClick(index)}
                 className={`card-career ${

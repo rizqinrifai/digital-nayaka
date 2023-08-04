@@ -51,7 +51,7 @@ export const Project = () => {
             sm={6}
             md={4}
             className="mb-5 center"
-            data-aos="fade-right"
+            data-aos="zoom-in"
             data-aos-delay="50"
             data-aos-duration="1000"
           >
@@ -77,7 +77,7 @@ export const Project = () => {
             sm={6}
             md={4}
             className="mb-5"
-            data-aos="fade-left"
+            data-aos="zoom-in"
             data-aos-delay="50"
             data-aos-duration="1000"
           >
@@ -93,7 +93,7 @@ export const Project = () => {
             sm={6}
             md={4}
             className="mb-5"
-            data-aos="fade-right"
+            data-aos="zoom-in"
             data-aos-delay="50"
             data-aos-duration="1000"
           >
@@ -119,7 +119,7 @@ export const Project = () => {
             sm={6}
             md={4}
             className="mb-5"
-            data-aos="fade-left"
+            data-aos="zoom-in"
             data-aos-delay="50"
             data-aos-duration="1000"
           >

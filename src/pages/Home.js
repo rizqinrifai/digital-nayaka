@@ -22,13 +22,14 @@ export const Home = () => {
     >
       <Container>
         <Row className="row-home">
-          <Col md={6} sm={12}>
-            <section
-              className="home-section pt-5"
-              data-aos="fade-right"
-              data-aos-delay="50"
-              data-aos-duration="1000"
-            >
+          <Col
+            md={6}
+            sm={12}
+            data-aos="zoom-in"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          >
+            <section className="home-section pt-5">
               <h1>
                 <span className="home-title">WE ARE</span>{" "}
                 <span className="home-title2">DNA</span>
@@ -49,13 +50,15 @@ export const Home = () => {
               </p>
             </section>
           </Col>
-          <Col md={6} sm={12} className="pt-3">
-            <section
-              className="home-section"
-              data-aos="fade-left"
-              data-aos-delay="50"
-              data-aos-duration="1000"
-            >
+          <Col
+            md={6}
+            sm={12}
+            className="pt-3"
+            data-aos="zoom-in"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          >
+            <section className="home-section">
               <img
                 alt=""
                 src={frame1}

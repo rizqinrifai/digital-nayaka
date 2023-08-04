@@ -46,7 +46,7 @@ export const Services = () => {
             md={6}
             lg={6}
             className="mb-4"
-            data-aos="fade-right"
+            data-aos="fade-up"
             data-aos-delay="50"
             data-aos-duration="1000"
           >
@@ -73,7 +73,7 @@ export const Services = () => {
             md={6}
             lg={6}
             className="mb-4"
-            data-aos="fade-left"
+            data-aos="fade-up"
             data-aos-delay="50"
             data-aos-duration="1000"
           >
@@ -97,7 +97,15 @@ export const Services = () => {
         </Row>
 
         <Row>
-          <Col xs={12} md={6} lg={6} className="mb-4" data-aos="fade-right">
+          <Col
+            xs={12}
+            md={6}
+            lg={6}
+            className="mb-4"
+            data-aos="fade-up"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          >
             <Card>
               <Card.Body>
                 <div className="icon-container">
@@ -115,7 +123,15 @@ export const Services = () => {
               </Card.Body>
             </Card>
           </Col>
-          <Col xs={12} md={6} lg={6} className="mb-4" data-aos="fade-left">
+          <Col
+            xs={12}
+            md={6}
+            lg={6}
+            className="mb-4"
+            data-aos="fade-up"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          >
             <Card>
               <Card.Body>
                 <div className="icon-container">
@@ -141,6 +157,8 @@ export const Services = () => {
             lg={6}
             className="mb-4"
             data-aos="fade-up"
+            data-aos-delay="50"
+            data-aos-duration="1000"
           >
             <Card>
               <Card.Body>
