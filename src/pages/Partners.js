@@ -80,7 +80,7 @@ export const Partners = () => {
       <div
         className="mb-3"
         style={{
-          paddingBottom: "20px",
+          paddingBottom: "5px",
           color: "#005D8C",
           fontWeight: "bold",
           textAlign: "center",
