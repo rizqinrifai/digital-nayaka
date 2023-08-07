@@ -20,6 +20,9 @@ export const Contact = () => {
       id="contact"
       className="contact"
       style={{ paddingTop: "40px", paddingBottom: "15px", textAlign: "center" }}
+      data-aos="fade-down"
+      data-aos-delay="50"
+      data-aos-duration="1000"
     >
       <Container>
         <h1
@@ -30,9 +33,6 @@ export const Contact = () => {
             color: "#005D8C",
             fontWeight: "bold",
           }}
-          data-aos="fade-down"
-          data-aos-delay="50"
-          data-aos-duration="1000"
         >
           Contact Us
         </h1>
