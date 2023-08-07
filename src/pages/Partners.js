@@ -17,6 +17,7 @@ import gambar8 from "../assets/Partner/8.png";
 import gambar9 from "../assets/Partner/9.png";
 import gambar10 from "../assets/Partner/10.png";
 import gambar11 from "../assets/Partner/11.png";
+import gambar12 from "../assets/Partner/12.png";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -117,7 +118,7 @@ export const Partners = () => {
             className="mySwiper"
             breakpoints={{
               640: {
-                slidesPerView: 2,
+                slidesPerView: 1,
                 spaceBetween: 20,
               },
               768: {
@@ -125,21 +126,21 @@ export const Partners = () => {
                 spaceBetween: 20,
               },
               1024: {
-                slidesPerView: 6,
+                slidesPerView: 5,
                 spaceBetween: 20,
               },
             }}
             autoplay={{
               delay: 1500,
-              disableOnInteraction: true,
+              disableOnInteraction: false,
               waitForTransition: true,
             }}
           >
             <SwiperSlide>
               <Image
-                alt="Partner 1"
-                src={gambar1}
-                style={{ height: "40px", width: "95px" }}
+                alt="Partner 12"
+                src={gambar12}
+                style={{ height: "55px", width: "95px" }}
               />
             </SwiperSlide>
             <SwiperSlide>

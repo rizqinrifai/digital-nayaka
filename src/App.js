@@ -6,7 +6,6 @@ import { Career } from "./pages/Career";
 import { Project } from "./pages/Project";
 import { Team } from "./pages/Team";
 import { Contact } from "./pages/Contact";
-import { Footer } from "./pages/Footer";
 import { Counter } from "./pages/Counter";
 import { Partners } from "./pages/Partners";
 
