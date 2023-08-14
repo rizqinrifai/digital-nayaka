@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Image, Button } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
@@ -7,11 +7,9 @@ import "../style/Career.css";
 import frontendIcon from "../assets/icons/coding (1) 1.png";
 import beckendIcon from "../assets/icons/coding 1-1.png";
 import marketingIcon from "../assets/icons/customer-support 1.png";
-import staffadminIcon from "../assets/icons/front-desk 1.png";
 import mobildevIcon from "../assets/icons/mobile-application 1.png";
 import accountsupervisorIcon from "../assets/icons/supervisor 1.png";
 import businesmentIcon from "../assets/icons/businessman 1.png";
-import backgroundRec from "../assets/images/Rectangle 9.png";
 
 import { useEffect } from "react";
 import AOS from "aos";
@@ -79,10 +77,10 @@ export const Career = () => {
         "3. Memahami bahasa pemograman Java dan bahasa Kotlin meniadi nilai tambah\n" +
         "4. Memahami database Postgresql, MYSQL, SQLITE\n" +
         "5. Memahami tools android dan android studio\n" +
-        "5. Memahami IOS development menjadi nilai tambah\n" +
-        "5. Memahami Framework React-Native dan Flutter menjadi nilai tambah\n" +
-        "5. Mampu bekerja sama dalam tim\n" +
-        "6. Penempatan Bekasi",
+        "6. Memahami IOS development menjadi nilai tambah\n" +
+        "7. Memahami Framework React-Native dan Flutter menjadi nilai tambah\n" +
+        "8. Mampu bekerja sama dalam tim\n" +
+        "9. Penempatan Bekasi",
       icon: mobildevIcon,
     },
     {
@@ -98,28 +96,6 @@ export const Career = () => {
         "8. Siap ditempatkan diseluruh cabang Warung Dana",
       icon: accountsupervisorIcon,
     },
-    // {
-    //   title: "Staff Administrator",
-    //   description:
-    //     "1. Menyusun dan mengelola Employee, Customer, Client Database (Input data & Arsip data)\n" +
-    //     "2. Memastikan proses administrasi berjalan dengan baik\n" +
-    //     "3. Membantu tim finance dalam proses pencairan dana\n" +
-    //     "4. Monitoring jumlah pencairan dana dan berkordinasi dengan finance\n" +
-    //     "5. Menyusun dan menginformasikan jadwal meeting, acara, dan kegiatan lainnya\n" +
-    //     "6. Menguasai Ms. Office (Word, Excell, Power Point)",
-    //   icon: staffadminIcon,
-    // },
-    // {
-    //   title: "IT Helpdesk",
-    //   description:
-    //     "1. Pendidikan minimal D3 Teknologi Informasi\n" +
-    //     "2. Pengalaman minimal 1 Tahun, fresh graduates are welcome to apply\n" +
-    //     "3. Menguasai HTML, CSS, JavaScript, Layout, Responsive Web, jQuery, Rest API, Bootstrap CSS (Understanding Vue.js is a plus)\n" +
-    //     "4. Menguasai alur atau proses akunting\n" +
-    //     "5. Mampu bekerja secara detail dan akurat\n" +
-    //     "6. Penempatan Bekasi",
-    //   icon: businesmentIcon,
-    // },
   ];
 
   const [activeCard, setActiveCard] = useState(null);
