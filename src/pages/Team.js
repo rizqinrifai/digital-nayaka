@@ -66,28 +66,11 @@ export const Team = () => {
       </Container>
 
       <Row className="justify-content-center">
-        <Col
-          md={4}
-          sm={12}
-          className="d-flex justify-content-center mb-5"
-          data-aos="fade-up"
-          data-aos-anchor-placement="top-bottom"
-          data-aos-delay="50"
-          data-aos-duration="1000"
-        >
+        <Col md={4} sm={12} className="d-flex justify-content-center mb-5">
           <Image className="img-daniel" alt="Daniel" src={danielTeam} />
         </Col>
 
-        <Col
-          className="img-team"
-          md={4}
-          sm={12}
-          style={{ width: "900px" }}
-          data-aos="fade-up"
-          data-aos-anchor-placement="top-bottom"
-          data-aos-delay="50"
-          data-aos-duration="1000"
-        >
+        <Col className="img-team" md={4} sm={12} style={{ width: "900px" }}>
           <Swiper
             loop={true}
             pagination={{
