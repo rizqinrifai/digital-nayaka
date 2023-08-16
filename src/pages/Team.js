@@ -18,7 +18,7 @@ import budiImage from "../assets/team/Budi.webp";
 import cliefImage from "../assets/team/Clief.webp";
 import andriImage from "../assets/team/Andri.webp";
 import kimImage from "../assets/team/Kim.webp";
-import rizqiImage from "../assets/team/Rizqi.webp";
+import rizqiImage from "../assets/team/Rizqi.png";
 import hendyImage from "../assets/team/Hendy.webp";
 import raffiImage from "../assets/team/Raffi.webp";
 import fahriImage from "../assets/team/Fahri.webp";
