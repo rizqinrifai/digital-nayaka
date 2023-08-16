@@ -52,7 +52,7 @@ export const Contact = () => {
               <Col xs={12} md={12} className="mb-3">
                 <div>
                   <a
-                    href="https://www.instagram.com/digitalnayaka.official"
+                    href="https://www.instagram.com/digitalnayakaabhinaya"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="instagram-link"
