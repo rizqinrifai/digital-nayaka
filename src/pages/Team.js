@@ -30,6 +30,7 @@ import safiraImage from "../assets/team/Safira.webp";
 import syarifImage from "../assets/team/Syarif.webp";
 import novaImage from "../assets/team/Nova.webp";
 import fadilImage from "../assets/team/Fadhil.webp";
+import iwanImage from "../assets/team/Iwan Sasongko.webp";
 
 import { useEffect } from "react";
 import AOS from "aos";
@@ -98,9 +99,9 @@ export const Team = () => {
               waitForTransition: true,
             }}
           >
-            {/* <SwiperSlide>
-              <Image alt="Budi" src={budiImage} />
-            </SwiperSlide> */}
+            <SwiperSlide>
+              <Image alt="Iwan" src={iwanImage} />
+            </SwiperSlide>
             <SwiperSlide>
               <Image alt="Adjie" src={deniImage} />
             </SwiperSlide>
