@@ -14,7 +14,7 @@ import { Pagination, Autoplay, Navigation } from "swiper/modules";
 import danielTeam from "../assets/team/Frame 1000001464.png";
 import deniImage from "../assets/team/Deni.webp";
 import adjieImage from "../assets/team/Adjie.webp";
-import budiImage from "../assets/team/Budi.webp";
+// import budiImage from "../assets/team/Budi.webp";
 import cliefImage from "../assets/team/Clief.webp";
 import andriImage from "../assets/team/Andri.webp";
 import kimImage from "../assets/team/Kim.webp";
@@ -31,6 +31,7 @@ import syarifImage from "../assets/team/Syarif.webp";
 import novaImage from "../assets/team/Nova.webp";
 import fadilImage from "../assets/team/Fadhil.webp";
 import iwanImage from "../assets/team/Iwan Sasongko.webp";
+import aditImage from "../assets/team/Adit.png";
 
 import { useEffect } from "react";
 import AOS from "aos";
@@ -146,6 +147,9 @@ export const Team = () => {
             </SwiperSlide>
             <SwiperSlide>
               <Image alt="Fadil" src={fadilImage} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image alt="Fadil" src={aditImage} />
             </SwiperSlide>
             <SwiperSlide>
               <Image alt="Azri" src={azriImage} />
