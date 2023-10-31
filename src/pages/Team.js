@@ -22,7 +22,7 @@ import rizqiImage from "../assets/team/Rizqi.png";
 import hendyImage from "../assets/team/Hendy.webp";
 import raffiImage from "../assets/team/Raffi.webp";
 import fahriImage from "../assets/team/Fahri.webp";
-import azriImage from "../assets/team/Azri.webp";
+import azriImage from "../assets/team/Azri.png";
 import dwiImage from "../assets/team/Dwi.webp";
 import diahImage from "../assets/team/Diah.webp";
 import erlitaImage from "../assets/team/Erlita.webp";
