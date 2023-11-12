@@ -46,6 +46,30 @@ export const Employee = () => {
         "Do nisi occaecat ullamco labore nostrud non et culpa voluptate elit cupidatat. Aliqua ad commodo et aute amet tempor commodo. Aute reprehenderit nostrud mollit anim est magna adipisicing mollit reprehenderit veniam Lorem elit ullamco proident. Non in cillum excepteur nulla id voluptate ullamco officia exercitation.",
       gambar: cliefImage,
     },
+    {
+      id: "L231028",
+      nama: "Kimberly Sani",
+      jabatan: "UI /UX Designer",
+      deskripsi:
+        "Do nisi occaecat ullamco labore nostrud non et culpa voluptate elit cupidatat. Aliqua ad commodo et aute amet tempor commodo. Aute reprehenderit nostrud mollit anim est magna adipisicing mollit reprehenderit veniam Lorem elit ullamco proident. Non in cillum excepteur nulla id voluptate ullamco officia exercitation.",
+      gambar: kimImage,
+    },
+    {
+      id: "L201010",
+      nama: "Andhika Aji",
+      jabatan: "Head Engineer",
+      deskripsi:
+        "Do nisi occaecat ullamco labore nostrud non et culpa voluptate elit cupidatat. Aliqua ad commodo et aute amet tempor commodo. Aute reprehenderit nostrud mollit anim est magna adipisicing mollit reprehenderit veniam Lorem elit ullamco proident. Non in cillum excepteur nulla id voluptate ullamco officia exercitation.",
+      gambar: adjieImage,
+    },
+    {
+      id: "L221027",
+      nama: "Rizqi Nur Rifai",
+      jabatan: "DEVOPS ENGINER",
+      deskripsi:
+        "Do nisi occaecat ullamco labore nostrud non et culpa voluptate elit cupidatat. Aliqua ad commodo et aute amet tempor commodo. Aute reprehenderit nostrud mollit anim est magna adipisicing mollit reprehenderit veniam Lorem elit ullamco proident. Non in cillum excepteur nulla id voluptate ullamco officia exercitation.",
+      gambar: rizqiImage,
+    },
   ];
 
   return (
@@ -78,19 +102,23 @@ export const Employee = () => {
                     className="image-container"
                     style={{
                       overflow: "hidden",
-                      padding: "20px",
                       justifyContent: "center",
                     }}
                   >
-                    <Image src={employee.gambar} alt="Employee" fluid />
+                    <Image
+                      src={employee.gambar}
+                      alt="Employee"
+                      fluid
+                      style={{ paddingTop: "30px", paddingLeft: "20px" }}
+                    />
                   </Col>
                   <Col
                     xs={12}
                     md={8}
                     className="text-container"
                     style={{
-                      padding: "20px",
-                      paddingLeft: "40px",
+                      paddingLeft: "20px",
+                      paddingRight: "40px",
                     }}
                   >
                     <h3
@@ -109,7 +137,7 @@ export const Employee = () => {
                         fontSize: "18px",
                         fontWeight: "bold",
                         fontFamily: "Poppins",
-                        paddingTop: "10px",
+                        paddingTop: "5px",
                       }}
                     >
                       {employee.jabatan}
@@ -118,6 +146,7 @@ export const Employee = () => {
                       style={{
                         fontFamily: "Poppins",
                         paddingTop: "10px",
+                        textAlign: "justify",
                       }}
                     >
                       {employee.deskripsi}
