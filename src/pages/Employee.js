@@ -3,26 +3,26 @@ import Navbar from "../components/NavbarComponent";
 import { Container, Row, Col, Image } from "react-bootstrap";
 //Team
 import danielTeam from "../assets/team/Frame 1000001464.png";
-import deniImage from "../assets/team/Deni.webp";
-import adjieImage from "../assets/team/Adjie.webp";
+import deniImage from "../assets/employee/Deni.png";
+import adjieImage from "../assets/employee/Aji.png";
 // import budiImage from "../assets/team/Budi.webp";
-import cliefImage from "../assets/team/Clief.webp";
-import andriImage from "../assets/team/Andri.webp";
-import kimImage from "../assets/team/Kim.png";
-import rizqiImage from "../assets/team/Rizqi.png";
-import hendyImage from "../assets/team/Hendy.webp";
-import raffiImage from "../assets/team/Raffi.webp";
-import fahriImage from "../assets/team/Fahri.webp";
-import azriImage from "../assets/team/Azri.png";
-import dwiImage from "../assets/team/Dwi.webp";
+import cliefImage from "../assets/employee/Clief.png";
+import andriImage from "../assets/employee/Andri.png";
+import kimImage from "../assets/employee/Kim.png";
+import rizqiImage from "../assets/employee/Rizqi.png";
+import hendyImage from "../assets/employee/Hendi.png";
+import raffiImage from "../assets/employee/Raffi.png";
+import fahriImage from "../assets/employee/Fahri.png";
+import azriImage from "../assets/employee/Azri.png";
+import dwiImage from "../assets/employee/Dwi.png";
 import diahImage from "../assets/team/Diah.webp";
 import erlitaImage from "../assets/team/Erlita.webp";
-import safiraImage from "../assets/team/Safira.webp";
-import syarifImage from "../assets/team/Syarif.webp";
-import novaImage from "../assets/team/Nova.webp";
-import fadilImage from "../assets/team/Fadhil.webp";
+import safiraImage from "../assets/employee/Safira.png";
+import syarifImage from "../assets/employee/Syarif.png";
+import novaImage from "../assets/employee/Nova.png";
+import fadilImage from "../assets/employee/Fadhil.png";
 import iwanImage from "../assets/team/Iwan Sasongko.webp";
-import aditImage from "../assets/team/Adit.png";
+import aditImage from "../assets/employee/Adit.png";
 
 export const Employee = () => {
   const query = new URLSearchParams(window.location.search);
@@ -162,8 +162,49 @@ export const Employee = () => {
 
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
       {employees.map((employee) => (
+        <div>
+          {employee.id === token && (
+            <section
+              id="employee"
+              className="employee"
+              style={{
+                fontFamily: "Poppins",
+              }}
+            >
+              <Container>
+                <Row className="employee">
+                  <Col
+                    xs={12}
+                    md={4}
+                    className="image-container"
+                    style={{
+                      overflow: "hidden",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <a href="https://digitalnayaka.com">
+                      <Image
+                        src={employee.gambar}
+                        alt="Employee"
+                        fluid
+                        style={{
+                          paddingTop: "13px",
+                          margin: "0 auto",
+                          display: "flex",
+                        }}
+                      />
+                    </a>
+                  </Col>
+                </Row>
+              </Container>
+            </section>
+          )}
+        </div>
+      ))}
+
+      {/* {employees.map((employee) => (
         <div>
           {employee.id === token && (
             <section
@@ -251,7 +292,7 @@ export const Employee = () => {
             </section>
           )}
         </div>
-      ))}
+      ))} */}
     </div>
   );
 };
