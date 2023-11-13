@@ -3,6 +3,7 @@ import { Navbar, Container, Nav } from "react-bootstrap";
 import { BsList, BsX } from "react-icons/bs";
 import dnaImage from "../assets/images/dna.webp";
 import "../style/NavbarComponent.css";
+import { useLocation } from "react-router-dom";
 
 const menu = ["Home", "Services", "Product", "Team", "Career"];
 
@@ -11,6 +12,8 @@ function NavbarComponent() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isRed, setIsRed] = useState(false);
   const [active, setActive] = useState(menu[0]);
+  const location = useLocation();
+  const isEmloyeePage = location.pathname === "/employee";
 
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
@@ -48,7 +51,10 @@ function NavbarComponent() {
         fixed="top"
       >
         <Container>
-          <Navbar.Brand href="/">
+          <Navbar.Brand
+            style={{ margin: isEmloyeePage ? "0 auto" : "" }}
+            href="/"
+          >
             {!isOpen && (
               <img
                 alt=""
@@ -57,12 +63,14 @@ function NavbarComponent() {
               />
             )}
           </Navbar.Brand>
-          <Navbar.Toggle
-            aria-controls="basic-navbar-nav"
-            onClick={toggleNavbar}
-          >
-            {isOpen ? <BsX /> : <BsList />}
-          </Navbar.Toggle>
+          {!isEmloyeePage && (
+            <Navbar.Toggle
+              aria-controls="basic-navbar-nav"
+              onClick={toggleNavbar}
+            >
+              {isOpen ? <BsX /> : <BsList />}
+            </Navbar.Toggle>
+          )}
 
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">

@@ -70,6 +70,94 @@ export const Employee = () => {
         "Do nisi occaecat ullamco labore nostrud non et culpa voluptate elit cupidatat. Aliqua ad commodo et aute amet tempor commodo. Aute reprehenderit nostrud mollit anim est magna adipisicing mollit reprehenderit veniam Lorem elit ullamco proident. Non in cillum excepteur nulla id voluptate ullamco officia exercitation.",
       gambar: rizqiImage,
     },
+    {
+      id: "L201013",
+      nama: "Andri Setyawan",
+      jabatan: "Head Engineer",
+      deskripsi:
+        "Do nisi occaecat ullamco labore nostrud non et culpa voluptate elit cupidatat. Aliqua ad commodo et aute amet tempor commodo. Aute reprehenderit nostrud mollit anim est magna adipisicing mollit reprehenderit veniam Lorem elit ullamco proident. Non in cillum excepteur nulla id voluptate ullamco officia exercitation.",
+      gambar: andriImage,
+    },
+    {
+      id: "L221022",
+      nama: "M Abdurraffi",
+      jabatan: "Frontend Developer",
+      deskripsi:
+        "Do nisi occaecat ullamco labore nostrud non et culpa voluptate elit cupidatat. Aliqua ad commodo et aute amet tempor commodo. Aute reprehenderit nostrud mollit anim est magna adipisicing mollit reprehenderit veniam Lorem elit ullamco proident. Non in cillum excepteur nulla id voluptate ullamco officia exercitation.",
+      gambar: raffiImage,
+    },
+    {
+      id: "L211017",
+      nama: "Azri Nurvani",
+      jabatan: "Software Developer",
+      deskripsi:
+        "Do nisi occaecat ullamco labore nostrud non et culpa voluptate elit cupidatat. Aliqua ad commodo et aute amet tempor commodo. Aute reprehenderit nostrud mollit anim est magna adipisicing mollit reprehenderit veniam Lorem elit ullamco proident. Non in cillum excepteur nulla id voluptate ullamco officia exercitation.",
+      gambar: azriImage,
+    },
+    {
+      id: "L231023",
+      nama: "M Fahri Kurniawan",
+      jabatan: "Frontend Developer",
+      deskripsi:
+        "Do nisi occaecat ullamco labore nostrud non et culpa voluptate elit cupidatat. Aliqua ad commodo et aute amet tempor commodo. Aute reprehenderit nostrud mollit anim est magna adipisicing mollit reprehenderit veniam Lorem elit ullamco proident. Non in cillum excepteur nulla id voluptate ullamco officia exercitation.",
+      gambar: fahriImage,
+    },
+    {
+      id: "L231030",
+      nama: "Dwi A Sobarna",
+      jabatan: "Software Developer",
+      deskripsi:
+        "Do nisi occaecat ullamco labore nostrud non et culpa voluptate elit cupidatat. Aliqua ad commodo et aute amet tempor commodo. Aute reprehenderit nostrud mollit anim est magna adipisicing mollit reprehenderit veniam Lorem elit ullamco proident. Non in cillum excepteur nulla id voluptate ullamco officia exercitation.",
+      gambar: dwiImage,
+    },
+    {
+      id: "L211018",
+      nama: "Hendi Triatmoko",
+      jabatan: "Frontend Developer",
+      deskripsi:
+        "Do nisi occaecat ullamco labore nostrud non et culpa voluptate elit cupidatat. Aliqua ad commodo et aute amet tempor commodo. Aute reprehenderit nostrud mollit anim est magna adipisicing mollit reprehenderit veniam Lorem elit ullamco proident. Non in cillum excepteur nulla id voluptate ullamco officia exercitation.",
+      gambar: hendyImage,
+    },
+    {
+      id: "L231029",
+      nama: "Nova Sekar",
+      jabatan: "IT HELPDESK",
+      deskripsi:
+        "Do nisi occaecat ullamco labore nostrud non et culpa voluptate elit cupidatat. Aliqua ad commodo et aute amet tempor commodo. Aute reprehenderit nostrud mollit anim est magna adipisicing mollit reprehenderit veniam Lorem elit ullamco proident. Non in cillum excepteur nulla id voluptate ullamco officia exercitation.",
+      gambar: novaImage,
+    },
+    {
+      id: "L221021",
+      nama: "Safira Hakim",
+      jabatan: "Marketing Business",
+      deskripsi:
+        "Do nisi occaecat ullamco labore nostrud non et culpa voluptate elit cupidatat. Aliqua ad commodo et aute amet tempor commodo. Aute reprehenderit nostrud mollit anim est magna adipisicing mollit reprehenderit veniam Lorem elit ullamco proident. Non in cillum excepteur nulla id voluptate ullamco officia exercitation.",
+      gambar: safiraImage,
+    },
+    {
+      id: "L211019",
+      nama: "M Syarif A",
+      jabatan: "Marketing Business",
+      deskripsi:
+        "Do nisi occaecat ullamco labore nostrud non et culpa voluptate elit cupidatat. Aliqua ad commodo et aute amet tempor commodo. Aute reprehenderit nostrud mollit anim est magna adipisicing mollit reprehenderit veniam Lorem elit ullamco proident. Non in cillum excepteur nulla id voluptate ullamco officia exercitation.",
+      gambar: syarifImage,
+    },
+    {
+      id: "L221025",
+      nama: "Ahmad Fadhil",
+      jabatan: "Backend Developer",
+      deskripsi:
+        "Do nisi occaecat ullamco labore nostrud non et culpa voluptate elit cupidatat. Aliqua ad commodo et aute amet tempor commodo. Aute reprehenderit nostrud mollit anim est magna adipisicing mollit reprehenderit veniam Lorem elit ullamco proident. Non in cillum excepteur nulla id voluptate ullamco officia exercitation.",
+      gambar: fadilImage,
+    },
+    {
+      id: "L231032",
+      nama: "Aditya Permadi",
+      jabatan: "Backend Developer",
+      deskripsi:
+        "Do nisi occaecat ullamco labore nostrud non et culpa voluptate elit cupidatat. Aliqua ad commodo et aute amet tempor commodo. Aute reprehenderit nostrud mollit anim est magna adipisicing mollit reprehenderit veniam Lorem elit ullamco proident. Non in cillum excepteur nulla id voluptate ullamco officia exercitation.",
+      gambar: aditImage,
+    },
   ];
 
   return (
@@ -109,7 +197,11 @@ export const Employee = () => {
                       src={employee.gambar}
                       alt="Employee"
                       fluid
-                      style={{ paddingTop: "30px", paddingLeft: "20px" }}
+                      style={{
+                        paddingTop: "13px",
+                        margin: "0 auto",
+                        display: "flex",
+                      }}
                     />
                   </Col>
                   <Col
@@ -129,6 +221,7 @@ export const Employee = () => {
                         fontFamily: "Poppins",
                         paddingTop: "25px",
                       }}
+                      className="d-none d-md-block"
                     >
                       {employee.nama}
                     </h3>
@@ -139,6 +232,7 @@ export const Employee = () => {
                         fontFamily: "Poppins",
                         paddingTop: "5px",
                       }}
+                      className="d-none d-md-block"
                     >
                       {employee.jabatan}
                     </h4>
