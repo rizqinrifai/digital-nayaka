@@ -1,6 +1,6 @@
 import { Container, Row, Col, Image } from "react-bootstrap";
 import "../style/Project.css";
-import balapsImage from "../assets/images/Frame 1000001470.png";
+// import balapsImage from "../assets/images/Frame 1000001470.png";
 import simotorImage from "../assets/images/Frame 1000001471.png";
 import strackImage from "../assets/images/Frame 1000001472.png";
 import dnacoopImage from "../assets/images/Frame 1000001475.png";
@@ -46,7 +46,7 @@ export const Project = () => {
 
       <Container>
         <Row>
-          <Col
+          {/* <Col
             xs={12}
             sm={6}
             md={4}
@@ -58,7 +58,7 @@ export const Project = () => {
             <a href="https://balaps.id/" target="_blank">
               <Image src={balapsImage} fluid className="img-hover-zoom" />
             </a>
-          </Col>
+          </Col> */}
           <Col
             xs={12}
             sm={6}
@@ -85,9 +85,6 @@ export const Project = () => {
               <Image src={strackImage} fluid className="img-hover-zoom" />
             </a>
           </Col>
-        </Row>
-
-        <Row style={{ marginTop: "10px" }}>
           <Col
             xs={12}
             sm={6}
@@ -101,6 +98,8 @@ export const Project = () => {
               <Image src={dnacoopImage} fluid className="img-hover-zoom" />
             </a>
           </Col>
+        </Row>
+        <Row style={{ marginTop: "10px" }}>
           <Col
             xs={12}
             sm={6}
