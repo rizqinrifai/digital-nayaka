@@ -118,12 +118,12 @@ export const Team = () => {
             <SwiperSlide>
               <Image alt="Andri" src={safiraImage} />
             </SwiperSlide>
-            <SwiperSlide>
-              <Image alt="Clief" src={diahImage} />
-            </SwiperSlide>
-            <SwiperSlide>
-              <Image alt="Diah" src={erlitaImage} />
-            </SwiperSlide>
+            {/*<SwiperSlide>*/}
+            {/*  <Image alt="Clief" src={diahImage} />*/}
+            {/*</SwiperSlide>*/}
+            {/*<SwiperSlide>*/}
+            {/*  <Image alt="Diah" src={erlitaImage} />*/}
+            {/*</SwiperSlide>*/}
             <SwiperSlide>
               <Image alt="Erlita" src={cliefImage} />
             </SwiperSlide>
