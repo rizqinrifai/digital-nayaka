@@ -15,17 +15,17 @@ import danielTeam from "../assets/team/Frame 1000001464.png";
 import deniImage from "../assets/team/Deni.webp";
 import adjieImage from "../assets/team/Adjie.webp";
 // import budiImage from "../assets/team/Budi.webp";
-import cliefImage from "../assets/team/Clief.webp";
+// import cliefImage from "../assets/team/Clief.webp";
 import andriImage from "../assets/team/Andri.webp";
 import kimImage from "../assets/team/Kim.png";
 import rizqiImage from "../assets/team/Rizqi.png";
-import hendyImage from "../assets/team/Hendy.webp";
+// import hendyImage from "../assets/team/Hendy.webp";
 import raffiImage from "../assets/team/Raffi.webp";
 import fahriImage from "../assets/team/Fahri.webp";
 import azriImage from "../assets/team/Azri.png";
 import dwiImage from "../assets/team/Dwi.webp";
-import diahImage from "../assets/team/Diah.webp";
-import erlitaImage from "../assets/team/Erlita.webp";
+// import diahImage from "../assets/team/Diah.webp";
+// import erlitaImage from "../assets/team/Erlita.webp";
 import safiraImage from "../assets/team/Safira.webp";
 import syarifImage from "../assets/team/Syarif.webp";
 import novaImage from "../assets/team/Nova.webp";
@@ -118,15 +118,15 @@ export const Team = () => {
             <SwiperSlide>
               <Image alt="Andri" src={safiraImage} />
             </SwiperSlide>
-            <SwiperSlide>
+            {/* <SwiperSlide>
               <Image alt="Clief" src={diahImage} />
-            </SwiperSlide>
-            <SwiperSlide>
+            </SwiperSlide> */}
+            {/* <SwiperSlide>
               <Image alt="Diah" src={erlitaImage} />
-            </SwiperSlide>
-            <SwiperSlide>
+            </SwiperSlide> */}
+            {/* <SwiperSlide>
               <Image alt="Erlita" src={cliefImage} />
-            </SwiperSlide>
+            </SwiperSlide> */}
             <SwiperSlide>
               <Image alt="Clief" src={novaImage} />
             </SwiperSlide>
@@ -136,9 +136,9 @@ export const Team = () => {
             <SwiperSlide>
               <Image alt="Rizqi" src={rizqiImage} />
             </SwiperSlide>
-            <SwiperSlide>
+            {/* <SwiperSlide>
               <Image alt="Hendy" src={hendyImage} />
-            </SwiperSlide>
+            </SwiperSlide> */}
             <SwiperSlide>
               <Image alt="Raffi" src={raffiImage} />
             </SwiperSlide>
